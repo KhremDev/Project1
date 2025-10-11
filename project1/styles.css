@@ -27,6 +27,29 @@ body, html {
     align-items: center
 }
 
+.highlight-week,
+.highlight-home,
+.highlight-desserts {
+    color: chocolate;
+}
+
+button.order-btn,
+button.hii {
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+button.order-btn:hover,
+button.hii:hover {
+    transform: translateY(-3px);
+    background: peru;
+}
+
+@keyframes slideUp {
+    0% { transform: translateY(100%); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
 
 .midnightLogo{
     width: 200px;
@@ -510,6 +533,7 @@ footer{
 #desback{
     background: black;
 }
+
 
 
 
