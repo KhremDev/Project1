@@ -126,8 +126,9 @@ document.querySelectorAll('.hi').forEach(button => {
         
         const itemName = button.getAttribute('data-item');
         
-        alert(`${itemName} added to your order!`);
+        alert(`${itemName} added to your order`);
         
     });
 }); //for the order buttons at the home page. needed different styling hence same function repeated twice
+
 
