@@ -10,7 +10,7 @@ html {
 body, html {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden; 
 }
 
 
@@ -253,9 +253,9 @@ figure {
 }
 .coffee-container {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap if necessary */
-    gap: 2em; /* Adds spacing between items */
-    justify-content: center; /* Center-align items */
+    flex-wrap: wrap; 
+    gap: 2em; 
+    justify-content: center; 
     
 }
 
@@ -263,11 +263,11 @@ figure {
 
 #pumpkin-container, #icedcoffee-container, .teag ,.cappp{
     position: relative;
-    background-color: #f7e1c1; /* Set your desired background color */
-    border-radius: 1em; /* Optional for rounded corners */
-    padding: 0.5em; /* Add padding around the image */
-    display: inline-block; /* Make the container shrink to fit content */
-    width: fit-content; /* Ensure it wraps the image tightly */
+    background-color: #f7e1c1; 
+    border-radius: 1em; 
+    padding: 0.5em;
+    display: inline-block;
+    width: fit-content; 
     transition: ease-in-out 0.3s;
 }
 
@@ -510,3 +510,4 @@ footer{
 #desback{
     background: black;
 }
+
