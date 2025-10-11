@@ -68,7 +68,7 @@ function scrollToSection() {
   });
 }
 
-function popMsg(txt="Ordered") {
+/*function popMsg(txt="Ordered") {
     let m = document.createElement("div");
     m.textContent = txt;
     m.style.position = "fixed";
@@ -86,3 +86,16 @@ function popMsg(txt="Ordered") {
     setTimeout(()=>{m.style.opacity="1"; m.style.transform="translateY(-10px)";},50);
     setTimeout(()=>{m.style.opacity="0"; m.style.transform="translateY(0)"; setTimeout(()=>document.body.removeChild(m),400)},2500);
 }
+*/
+document.querySelectorAll(".hii").forEach(button => {
+    
+  button.addEventListener("click", () => {
+      
+    const item = button.dataset.item;
+
+      
+    alert("Ordered");
+      
+  });
+    
+});
