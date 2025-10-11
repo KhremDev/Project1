@@ -85,7 +85,7 @@ function scrollToSection() {
     document.body.appendChild(m);
     setTimeout(()=>{m.style.opacity="1"; m.style.transform="translateY(-10px)";},50);
     setTimeout(()=>{m.style.opacity="0"; m.style.transform="translateY(0)"; setTimeout(()=>document.body.removeChild(m),400)},2500);
-}
+} removed beacuse had to change from inline to seperate js and css
 */
 document.querySelectorAll(".hii").forEach(button => {
     
@@ -99,3 +99,4 @@ document.querySelectorAll(".hii").forEach(button => {
   });
     
 });
+
