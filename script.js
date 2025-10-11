@@ -62,11 +62,30 @@ setInterval(changeGreatTxt, 6000);
 
 
 function scrollToSection() {
+    
   const section = document.getElementById("brewws")
+    
   section.scrollIntoView({
+      
     behavior: "smooth"
   });
+    
 }
+
+const joinBtn = document.getElementById('join');
+
+if (joinBtn) {
+    
+    joinBtn.addEventListener('click', () => {
+        
+        const section = document.getElementById('pumpkin-container');
+        
+        if (section) section.scrollIntoView({ behavior: 'smooth' });
+        
+    });
+    
+}
+
 
 /*function popMsg(txt="Ordered") {
     let m = document.createElement("div");
@@ -111,3 +130,4 @@ document.querySelectorAll('.hi').forEach(button => {
         
     });
 }); //for the order buttons at the home page. needed different styling hence same function repeated twice
+
