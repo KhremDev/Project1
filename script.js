@@ -100,3 +100,14 @@ document.querySelectorAll(".hii").forEach(button => {
     
 });
 
+
+document.querySelectorAll('.hi').forEach(button => {
+    
+    button.addEventListener('click', () => {
+        
+        const itemName = button.getAttribute('data-item');
+        
+        alert(`${itemName} added to your order!`);
+        
+    });
+}); //for the order buttons at the home page. needed different styling hence same function repeated twice
