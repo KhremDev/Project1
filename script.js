@@ -61,16 +61,6 @@ function changeGreatTxt () {
 setInterval(changeGreatTxt, 6000);
 
 
-function scrollToSection() {
-    
-  const section = document.getElementById("brewws")
-    
-  section.scrollIntoView({
-      
-    behavior: "smooth"
-  });
-    
-}
 
 const joinBtn = document.getElementById('join');
 
@@ -130,5 +120,6 @@ document.querySelectorAll('.hi').forEach(button => {
         
     });
 }); //for the order buttons at the home page. needed different styling hence same function repeated twice
+
 
 
