@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gazetteer</title>
+
+    <link rel="stylesheet" href="libs/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="libs/css/leaflet.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<!--nav/ top bar-->
+    <nav class="topbar">
+
+        <div class="nav-content">
+
+            <span class="title">Gazetteer</span>
+
+            <select id="countryPick" class="country-select">
+
+                <option value="">Loading countries...</option>
+
+
+            </select>
+
+            <button id="showInfo" class="info-btn">Info</button>
+
+        </div>
+
+    </nav>
+<!--map container where map will be-->
+    <div id="mapContainer"></div>
+
+<!--popup stuff-->
+    <div class="popup-overlay" id="infoPopup">
+
+        <div class="popup-box">
+
+            <div class="popup-top">
+
+                <h3>Country Info</h3>
+
+
+                <button class="close-btn">×</button>
+
+
+            </div>
+
+
+            <div class="popup-content" id="infoContent">
+
+                loading..
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+<script src="libs/js/jquery-3.7.1.min.js"></script> <!--jquery b4 beacuse didnt work otherwise -->
+
+<script src="libs/js/leaflet.js"></script>
+
+<script src="libs/js/script.js"></script>
+
+
+</body>
+</html>

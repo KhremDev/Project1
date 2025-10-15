@@ -1,0 +1,188 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Verdana', sans-serif;
+}
+
+/*nav*/
+.topbar {
+    background: #1a1a1a; /*same 2 colors used in portfolio*/
+    color: #10b981;
+    padding: 12px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+.country-select {
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    min-width: 200px;
+    cursor: pointer;
+}
+
+
+
+.info-btn {
+    padding: 8px 20px;
+    background: #10b981;
+    color:  #1a1a1a;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.4s;
+}
+
+
+.info-btn:hover {
+    background: #0b7c56;
+}
+
+
+
+#mapContainer {
+    height: calc(100vh - 56px);
+    width: 100%;
+    margin-top: 56px;
+}
+
+/*popup styles*/
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.popup-overlay.show {
+    display: flex;
+}
+
+
+.popup-box {
+    background: #1a1a1a;
+    border-radius: 10px;
+    width: 90%;
+    color: white;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow: auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+
+
+.popup-top {
+    padding: 15px 20px;
+    border-bottom: 2px solid #ecf0f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #10b981;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.popup-top h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    line-height: 1;
+}
+
+
+.close-btn:hover {
+    color: #1a1a1a;
+}
+
+
+
+.popup-content {
+    padding: 20px;
+}
+
+
+.popup-content h4 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-size: 24px;
+}
+
+
+.popup-content p {
+    margin: 12px 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+.popup-content strong {
+    color: #34495e;
+}
+
+/*mobile first responsive styles and tweak*/
+@media (max-width: 768px) {
+    .nav-content {
+        gap: 10px;
+    }
+    
+
+    .title {
+        font-size: 20px;
+    }
+    
+
+    .country-select {
+        min-width: 150px;
+        font-size: 14px;
+    }
+    
+
+    .info-btn {
+        padding: 6px 15px;
+        font-size: 14px;
+    }
+
+}
